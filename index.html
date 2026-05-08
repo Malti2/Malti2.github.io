@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Poke Message Sender</title>
+    <meta name="description" content="Clean GitHub Pages interface for sending messages to Poke." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero card">
+        <p class="eyebrow">Poke · GitHub Pages</p>
+        <h1>Nachricht an Poke senden</h1>
+        <p class="lead">API-Key eintragen, Nachricht schreiben und direkt absenden. Der Schlüssel wird nur lokal im Browser gespeichert.</p>
+      </section>
+
+      <section class="card form-card">
+        <label for="apiKey">Poke API Key</label>
+        <input id="apiKey" type="password" autocomplete="off" spellcheck="false" placeholder="eyJ..." />
+
+        <label for="message">Nachricht</label>
+        <textarea id="message" rows="8" placeholder="Schreibe hier deine Nachricht an Poke..."></textarea>
+
+        <div class="actions">
+          <button id="sendBtn" class="primary" type="button">Senden</button>
+          <button id="clearBtn" type="button">Leeren</button>
+        </div>
+
+        <p id="status" class="status">Bereit.</p>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
